@@ -1,5 +1,5 @@
 # AWS
 
-echo "this is readme file"
+README.md
 Maven build
 github webhook

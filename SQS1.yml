@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Provides IAM roles and policies
+Metadata:
+  Stack:
+    Value: 2
+  VersionDate:
+    Value: 20180326
+  Identifier:
+    Value: template-iam
+  Input:
+    Description: IAM roles and policies
+  Output:
+    Description: Outputs ID of all deployed resources
+Resources:
+  rSNSSQSRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+            Effect: Allow
+            Principal:
+              Service:
+                - sns.amazonaws.com
+                - sqs.amazonaws.com
+                
+            Action: 'sts:AssumeRole'
+      Path: /
+      RoleName: sqs-iam-role
+      Policies:
+        - PolicyName: SNSSqsAccess
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:          
+              - Effect: Allow
+                Sid: SNSSqsAccess
+                Action: 
+                  - 'sqs:GetQueueUrl'
+                  - 'sqs:ReceiveMessage'
+                  - 'sqs:SendMessage'
+                  - 'sqs:SendMessageBatch'
+                  - 'sqs:GetQueueAttributes'
+                  - 'sqs:DeleteMessage'
+                  - 'sqs:ListQueues' 
+                  - 'sqs:AddPermission'       
+                Resource: arn:aws:sqs:us-east-1:111316303997:BouncedEmail
+                #Condition:
+                  #ArnEquals:
+                    #aws:SourceArn: arn:aws:sns:us-east-1:111316303997:BouncedSNS  
+                Principal:
+                  AWS:
+                    - arn:aws:sns:us-east-1:111316303997:BouncedSNSTopic
+
+ 
+
+  
+        

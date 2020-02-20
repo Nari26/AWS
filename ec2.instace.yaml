@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates Ec2 Instance
-Parameters:
+#Parameters:
 
 Resources:
   rEc2Instance:

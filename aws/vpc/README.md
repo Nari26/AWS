@@ -70,7 +70,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >> 6. Choose **Attach internet gateway**.
 
 
-### Step-4: Create Public and Private Route Table
+### Step-4: Create Public and Private Route Tables
 >>**Private RouteTable**
 >> 1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
 >> 2. In the navigation pane, choose **Route Tables**, and then choose **Create route table**.
@@ -102,6 +102,14 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/edit-subnet.PNG)
 >>>- Choose your public subnet (VPC88-PublicSubnet1) from the available subnets list. 
 >>>- Choose **Save associations**.
+>> 6. Add internet gateway route to the public route table (so Ec2 instances in public subnets get internet access)
+>>>- In the navigation pane, choose **Route Tables**
+>>>- Click the check box next to your public route table (VPC88-PublicRouteTable)
+>>>- Go to **Routes** tab and click on **Edit routes**.
+>>>- Specify the following details
+>>>>- Destination: 0.0.0.0/0
+>>>>- Target: Select **Internet Gateway** from the dropdown, and choose your IGW (VPC88-IGW)
+>>>- Choose **Save changes**.
 
 
 

@@ -106,7 +106,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>- In the navigation pane, choose **Route Tables**
 >>>- Click the check box next to your public route table (VPC88-PublicRouteTable)
 >>>- Go to **Routes** tab and click on **Edit routes**.
->>>- Specify the following details
+>>>- Choose Add route, and specify the following details
 >>>>- Destination: 0.0.0.0/0
 >>>>- Target: Select **Internet Gateway** from the dropdown, and choose your IGW (VPC88-IGW)
 >>>- Choose **Save changes**.

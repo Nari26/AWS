@@ -13,7 +13,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 
 ## How to Create an AWS VPC using Console
 
->Step-1: Creating a VPC 
+### Step-1: Creating a VPC 
 
 >>1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/ and login to your account. 
 >>2. Make sure to choose **N.Virginia (us-east-1)** region. (top right section of the page)
@@ -24,7 +24,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>- IPv4 CIDR block: 10.0.0./24 (example)
 >>6. Choose **Create VPC**.
 
->> ![alt text](Create-VPC.png)
+>> ![alt text](./Create-VPC.png)
 
 >Step-2: Creating Public and Private Subnets 
 >>**Private Subnet:**
@@ -37,7 +37,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>- **IPv4 CIDR block:** 10.0.0.0/25 (make sure to provide the CIDR within your VPC CIDR range)
 >>- Choose **Create Subnet** at the bottom of the page. 
 
->>> ![alt text](private-subnet1.png)
+>>> ![alt text](./private-subnet1.png)
 
 >>**Public Subnet:**
 >>- Navigate to AWS VPC 
@@ -51,9 +51,9 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>- Once you create the public subnet, we need to enable public ipv4 settings as below 
 >>>- Navigate Subnets in the VPC page, search for your public subnet(VPC88-PublicSubnet1). 
 >>>- Click the check box next to the subnet name, go to **Actions** at the top right and click on **Modify auto-assign IP settings**.  
->>>>> ![alt text](public-subnet1-Ipv4-settings.png)
+>>>>> ![alt text](./public-subnet1-Ipv4-settings.png)
 >>>- Click on the check box next to **Enable auto-assign public IPv4 address**, then choose **Save**.
->>>>> ![alt text](public-subnet1-Ipv4-settings-update.png)
+>>>>> ![alt text](./public-subnet1-Ipv4-settings-update.png)
 
 
 

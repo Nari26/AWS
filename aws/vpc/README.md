@@ -21,7 +21,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>4. Choose **Create VPC** (At top right section).
 >>5. Specify the following VPC details as needed.
 >>>- Name tag: VPC88 (Unique name based on the requirement)
->>>- IPv4 CIDR block: 10.0.0./24 (example)
+>>>- IPv4 CIDR block: 10.0.0.0/24 (example)
 >>6. Choose **Create VPC**.
 
 >> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/Create-VPC.PNG)
@@ -40,9 +40,9 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/private-subnet1.PNG))
 
 >>**Public Subnet:**
->>- Navigate to AWS VPC 
->>- In the left navigation pane, choose **Subnets**, then click on **Create subnet**.
->>- Specify the subnet details as necessary 
+>> 1. Navigate to AWS VPC 
+>> 2. In the left navigation pane, choose **Subnets**, then click on **Create subnet**.
+>> 3. Specify the subnet details as necessary 
 >>>- **VPC:** VPC88 (choose your vpc from the dropdown list)
 >>>- **Name tag:** VPC88-PublicSubnet1 (include vpc name prefix to identify the subnets easily)
 >>>- **Availability Zone:** us-east-1b (choose a availability zone when you create multiple subnets)
@@ -56,7 +56,17 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/public-subnet1-Ipv4-settings-update.PNG)
 
 
-### Step-3: Create IGW (Internet Gateway) & Attach it to the VPC
->>
+### Step-3: Create and attach an Internet Gateway (IGW)
+>> 1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
+>> 2. In the navigation pane, choose **Internet Gateways**, and then choose **Create internet gateway**.
+>> 3. Specify the IGW details 
+>>>- **Name tag:** VPC88-IGW
+>> 4. Choose **Create internet gateway**
+>> 5. To attach the intergateway to VPC, follow these steps 
+>>>- In the navigation pane, choose **Internet Gateways** 
+>>>- Click the check box next to IGW name, then go to Actions -> select Attach to VPC 
+>>>- Select your VPC name from the dropdown list (ex: VPC88)
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/attach-igw.PNG)
+
 
 

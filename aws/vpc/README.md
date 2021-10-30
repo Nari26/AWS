@@ -24,20 +24,20 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>- IPv4 CIDR block: 10.0.0./24 (example)
 >>6. Choose **Create VPC**.
 
->> ![alt text](./Create-VPC.png)
+>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/Create-VPC.PNG)
 
->Step-2: Creating Public and Private Subnets 
+### Step-2: Creating Public and Private Subnets 
 >>**Private Subnet:**
->>- Navigate to AWS VPC 
->>- In the left navigation pane, choose **Subnets**, then click on **Create subnet**.
->>- Specify the subnet details as necessary 
+>>1. Navigate to AWS VPC 
+>>2. In the left navigation pane, choose **Subnets**, then click on **Create subnet**.
+>>3. Specify the subnet details as necessary 
 >>>- **VPC:** VPC88 (choose your vpc from the dropdown list)
 >>>- **Name tag:** VPC88-PrivateSubnet1 (include vpc name prefix to identify the subnets easily)
 >>>- **Availability Zone:** us-east-1a (choose a availability zone when you create multiple subnets)
 >>>- **IPv4 CIDR block:** 10.0.0.0/25 (make sure to provide the CIDR within your VPC CIDR range)
->>- Choose **Create Subnet** at the bottom of the page. 
+>>4. Choose **Create Subnet** at the bottom of the page. 
 
->>> ![alt text](./private-subnet1.png)
+>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/private-subnet1.PNG))
 
 >>**Public Subnet:**
 >>- Navigate to AWS VPC 
@@ -51,9 +51,12 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>- Once you create the public subnet, we need to enable public ipv4 settings as below 
 >>>- Navigate Subnets in the VPC page, search for your public subnet(VPC88-PublicSubnet1). 
 >>>- Click the check box next to the subnet name, go to **Actions** at the top right and click on **Modify auto-assign IP settings**.  
->>>>> ![alt text](./public-subnet1-Ipv4-settings.png)
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/public-subnet1-Ipv4-settings.PNG)
 >>>- Click on the check box next to **Enable auto-assign public IPv4 address**, then choose **Save**.
->>>>> ![alt text](./public-subnet1-Ipv4-settings-update.png)
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/public-subnet1-Ipv4-settings-update.PNG)
 
+
+### Step-3: Create IGW (Internet Gateway) & Attach it to the VPC
+>>
 
 

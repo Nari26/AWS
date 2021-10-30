@@ -67,6 +67,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >>>- Click the check box next to IGW name, then go to Actions -> select Attach to VPC 
 >>>- Select your VPC name from the dropdown list (ex: VPC88)
 >>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/attach-igw.PNG)
+>> 6. Choose **Attach internet gateway**.
 
 
 

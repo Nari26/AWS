@@ -70,4 +70,39 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >> 6. Choose **Attach internet gateway**.
 
 
+### Step-4: Create Public and Private Route Table
+>>**Private RouteTable**
+>> 1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
+>> 2. In the navigation pane, choose **Route Tables**, and then choose **Create route table**.
+>> 3. Specify the following details 
+>>>- **Name:** VPC88-PrivateRouteTable
+>>>- **VPC:** Select your VPC from the dropdown list (ex: VPC88)
+>> 4. Choose **Create route table**. 
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/private-routetable.PNG)
+>> 5. Associate the private subnet to the private route table
+>>>- In the navigation pane, choose **Route Tables**
+>>>- Click the check box next to your private route table (VPC88-PrivateRouteTable)
+>>>- Go to **Subnet associations** tab and click on **Edit subnet associations**
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/edit-subnet.PNG)
+>>>- Choose your private subnet (VPC88-PrivateSubnet1) from the available subnets list. 
+>>>- Choose **Save associations**.
+
+>>**Public RouteTable**
+>> 1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
+>> 2. In the navigation pane, choose **Route Tables**, and then choose **Create route table**.
+>> 3. Specify the following details 
+>>>- **Name:** VPC88-PublicRouteTable
+>>>- **VPC:** Select your VPC from the dropdown list (ex: VPC88)
+>> 4. Choose **Create route table**. 
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/public-routetable.PNG)
+>> 5. Associate the public subnet to the public route table
+>>>- In the navigation pane, choose **Route Tables**
+>>>- Click the check box next to your public route table (VPC88-PublicRouteTable)
+>>>- Go to **Subnet associations** tab and click on **Edit subnet associations**
+>>>>> ![alt text](https://github.com/Nari26/AWS/blob/master/aws/vpc/edit-subnet.PNG)
+>>>- Choose your public subnet (VPC88-PublicSubnet1) from the available subnets list. 
+>>>- Choose **Save associations**.
+
+
+
 

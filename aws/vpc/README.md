@@ -7,7 +7,7 @@ Amazon VPC lets you provision a logically isolated section of the Amazon Web Ser
 >1. **Virtual private cloud (VPC)** - A logically isolated virtual network in the AWS cloud. You define a VPC’s IP address space from the ranges you select.
 >2. **Subnet** - A segment of a VPC’s IP address range where you can place groups of isolated resources.
 >3. **Internet Gateway** - The Amazon VPC side of a connection to the public Internet.
->4.**Route table** - A set of rules, called routes, that are used to determine where network traffic is directed.
+>4. **Route table** - A set of rules, called routes, that are used to determine where network traffic is directed.
 >5. **CIDR block** - Classless Inter-Domain Routing. An internet protocol address allocation and route aggregation methodology.
 
 

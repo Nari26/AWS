@@ -1,4 +1,4 @@
-# How to launch a new EC2 instance
+# How to launch a new EC2 instance in public subnet
 >>- Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/
 >>- From the console dashboard, choose Launch Instance.
 >>- Specify the following instance details:

@@ -16,3 +16,9 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 
 # IAM Architecture
 ![alt text](https://github.com/Nari26/AWS/blob/master/aws/IAM/IAM_architecture.png)
+
+## 1. IAM Users:
+- An AWS IAM user is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials.
+
+Adding an IAM User - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
+
